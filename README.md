@@ -9,15 +9,17 @@ level, with 36 schools per region. The outcomes of interest for the study are fi
 The folder "01 Data" contains the two relevant datasets:
 		
 1. AssessmentData.csv: Contains student grades for each of seven subjects across all three years of the study: English, Mathematics, Afrikaans, Agriculture, Biology, Geography, and Physical Science. This dataset is at a student-subject level. Grades are expressed as letters based on the following point scale:
-				
-	A | 6
-	B | 5
-	C | 4
-	D | 3
-	E | 2
-	F | 1
-	G | 0
-         
+
+
+A | 6
+B | 5
+C | 4
+D | 3
+E | 2
+F | 1
+G | 0
+
+
 2. StudentData.csv: Contains some demographic data for each student as well as variables indicating the region and school. This dataset is at a student level. 
 
 

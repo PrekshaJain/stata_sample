@@ -25,10 +25,18 @@ The folder "01 Data" contains the two relevant datasets:
 
 The study uses a difference-in-differences methodology to estimate the impact of educational grants provided to schools in Oshikoto for the 2015 school year. All schools in Oshikoto are treatment schools and all schools in Omusati are control schools.				
 				
-The do-file performs the following tasks:
+The do-file in the folder "04 Code" performs the following tasks:
 			
 (1) Task 1: Generate a single student-level dataset combining the student-level and assessment-level data after performing checks on the data and cleaning it up.
 				
 (2) Task 2: The main identifying assumption of the difference-in-differences model is that treatment and control groups are on "parallel trends" prior to the intervention. For each of the seven subjects, graphically check the trend in scores across the three years.
 				
 (3) Task 3: Perform the difference-in-differences estimation for each of the seven subjects, inclding any relevant variables as controls. Output each specification to a single table and export to Excel.
+
+
+## Description of Folders
+
+01 Data: Contains original .csv files, the converted .dta files to use in STATA, and the final combined dataset from Task 1
+02 Tables: Contains the DID regression output from Task 3 in a .xlsx format
+03 Figures: Contains the graphs created in Task 2 to check for the parallel trends assumption
+04 Code: Comtains the do-file used to perform all tasks

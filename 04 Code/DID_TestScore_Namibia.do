@@ -86,7 +86,7 @@
 	***********************************************
 	
 	*Importing .csv files to convert them into .dta files
-			import delimited "C:/Users/PJain/Documents/STATA_Sample/01 Data/AssessmentData.csv", encoding(UTF-8)
+			import delimited "$data/AssessmentData.csv", encoding(UTF-8)
 			save "$data/AssessmentData.dta", replace
 			
 			import delimited "$data/StudentData.csv", encoding(UTF-8) clear
@@ -286,7 +286,7 @@
 		*Mother's level of education
 		*Father's level of education
 
-			local controlvars nsiblings i.sex i.income i.mothers_edu i.fathers_edu
+		local controlvars 	nsiblings i.sex i.income i.mothers_edu i.fathers_edu
 	
 	
 	*Running the regressions

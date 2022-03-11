@@ -8,7 +8,7 @@ level, with 36 schools per region. The outcomes of interest for the study are fi
 		
 The folder "01 Data" contains the two relevant datasets:
 		
-(1) AssessmentData.csv: Contains student grades for each of seven subjects across all three years of the study: English, Mathematics, Afrikaans, Agriculture, Biology, Geography, and Physical Science. Grades are expressed as letters based on the following point scale:
+1. AssessmentData.csv: Contains student grades for each of seven subjects across all three years of the study: English, Mathematics, Afrikaans, Agriculture, Biology, Geography, and Physical Science. This dataset is at a student-subject level. Grades are expressed as letters based on the following point scale:
 				
 	A | 6
 	B | 5
@@ -18,7 +18,7 @@ The folder "01 Data" contains the two relevant datasets:
 	F | 1
 	G | 0
          
-(2) StudentData.csv: Contains some demographic data for each student as well as variables indicating the region and school.
+2. StudentData.csv: Contains some demographic data for each student as well as variables indicating the region and school. This dataset is at a student level. 
 
 
 ## Analysis Conducted in the Do File
@@ -27,11 +27,9 @@ The study uses a difference-in-differences methodology to estimate the impact of
 				
 The do-file in the folder "04 Code" performs the following tasks:
 			
-(1) Task 1: Generate a single student-level dataset combining the student-level and assessment-level data after performing checks on the data and cleaning it up.
-				
-(2) Task 2: The main identifying assumption of the difference-in-differences model is that treatment and control groups are on "parallel trends" prior to the intervention. For each of the seven subjects, graphically check the trend in scores across the three years.
-				
-(3) Task 3: Perform the difference-in-differences estimation for each of the seven subjects, inclding any relevant variables as controls. Output each specification to a single table and export to Excel.
+* Task 1: Generate a single student-level dataset combining the student-level and assessment-level data after performing checks on the data and cleaning it up.
+* Task 2: The main identifying assumption of the difference-in-differences model is that treatment and control groups are on "parallel trends" prior to the intervention. For each of the seven subjects, graphically check the trend in scores across the three years.
+* Task 3: Perform the difference-in-differences estimation for each of the seven subjects, inclding any relevant variables as controls. Output each specification to a single table and export to Excel.
 
 
 ## Description of Folders

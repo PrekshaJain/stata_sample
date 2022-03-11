@@ -34,13 +34,13 @@
 				Physical Science. Grades are expressed as letters based on the 
 				following point scale:
 				
-					A |	6
+					A | 6
 					B | 5
-					C |	4
+					C | 4
 					D | 3
-					E |	2
-					F |	1
-					G |	0
+					E | 2
+					F | 1
+					G | 0
 
 			(2) StudentData.csv: Contains some demographic data for each student
 				as well as variables indicating the region and school.

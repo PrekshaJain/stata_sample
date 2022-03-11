@@ -37,6 +37,9 @@ The do-file in the folder "04 Code" performs the following tasks:
 ## Description of Folders
 
 01 Data: Contains original .csv files, the converted .dta files to use in STATA, and the final combined dataset from Task 1
+
 02 Tables: Contains the DID regression output from Task 3 in a .xlsx format
+
 03 Figures: Contains the graphs created in Task 2 to check for the parallel trends assumption
+
 04 Code: Comtains the do-file used to perform all tasks

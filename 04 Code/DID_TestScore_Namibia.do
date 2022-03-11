@@ -1,14 +1,14 @@
-   ******************************************************************************
-   * Author: 	Preksha                                                        	*
-   * Date: 		03/11/2021                                                     	*
-   * Purpose: 	Differences-in-differences analysis to study impact of 			*
-   *			educational grant to schools on test scores in Namibia			*
-   * Version:	STATA SE 17.0												   	*
-   ******************************************************************************
+   **************************************************************************************************************************************
+   * Author: 	Preksha Jain                                                  								*
+   * Date: 	03/11/2021                                              							       	*
+   * Purpose: 	Differences-in-differences analysis to study impact of 									*
+   *		educational grant to schools on test scores in Namibia									*
+   * Version:	STATA SE 17.0													    	*
+   **************************************************************************************************************************************
    
    
    ******************************************************************************
-   * DESCRIPTION OF THE DATASET AND THE ANALYSIS CONDUCTED IN THIS DO FILE 	   	*
+   * DESCRIPTION OF THE DATASET AND THE ANALYSIS CONDUCTED IN THIS DO FILE 	*
    ******************************************************************************
    
    /*  
@@ -64,7 +64,7 @@
 
 	*/
    
-********************************************************************************   
+**************************************************************************************************************************************
    
    
    * Initializing Stata
@@ -200,14 +200,14 @@
 			}
 			
 			label var studentid 	"Student ID"
-			label var year 			"Year"
-			label var region 		"Region"
-			label var school 		"School"
-			label var sex 			"Student Sex"
+			label var year 		"Year"
+			label var region 	"Region"
+			label var school 	"School"
+			label var sex 		"Student Sex"
 			label var nsiblings 	"Number of Siblings of Student"
 			label var mothers_edu 	"Level of Education of Student's Mother"
 			label var fathers_edu 	"Level of Education of Student's Father"
-			label var income 		"Household Income Level"
+			label var income 	"Household Income Level"
 	
 	
 	
@@ -222,13 +222,13 @@
 	
 	*Creating relevant variables for the analysis
 	
-			gen treat 		= (region == "Oshikoto")
-			gen post 		= (year == 2015)
+			gen treat 	= (region == "Oshikoto")
+			gen post 	= (year == 2015)
 			gen treat_post 	= treat*post
 			
 			
-			label var treat 		"Treat"
-			label var post 			"Post"
+			label var treat 	"Treat"
+			label var post 		"Post"
 			label var treat_post 	"Treat x Post"
 
 	
@@ -318,8 +318,7 @@
 			sfmt(%9.2f)
 			
 			
-
-*********************************************************************************
-*									END											*
-*********************************************************************************
+**************************************************************************************************************************************
+*								END								     *
+**************************************************************************************************************************************
 

@@ -280,11 +280,11 @@
 	**************************************************************
 
 	*Defining the covariates at the student level: 
-		*Gender
 		*Number of siblings
-		*Household income
-		*Mother's level of education
-		*Father's level of education
+		*Gender (categorical)
+		*Household income (categorical)
+		*Mother's level of education (categorical)
+		*Father's level of education (categorical)
 
 		local controlvars 	nsiblings i.sex i.income i.mothers_edu i.fathers_edu
 	
@@ -312,7 +312,7 @@
 	*Regression output
 
 			esttab using "$tables/DIDResults.csv", replace ///
-			se br r2 b(%9.2f) keep(treat post treat_post) ///
+			se br r2 obslast b(%9.2f) keep(treat post treat_post) ///
 			varlabels(treat "Treat" post "Post" treat_post "Treat x Post") label ///
 			scalars("cmean Control Mean") ///
 			sfmt(%9.2f)
